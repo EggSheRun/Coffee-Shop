@@ -2,33 +2,28 @@
     text-transform: none;
 }
 body {
-    background-color: #1a1a1a; /* Dark background for the main page area */
+    background-color: #1a1a1a;
     color: #f0f0f0;
 }
 
 .about-me-hero {
-    /* Adjusted min-height calculation is often unnecessary if padding is correct */
     min-height: 100vh; 
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    
-    /* FIX: Increased top padding (first value) to push content below the header. */
     padding: clamp(10rem, 15vh, 14rem) 9% 2rem 9%; 
-    
     gap: 3rem; 
     flex-wrap: wrap; 
 }
 
 .about-me-content {
-    flex: 1 1 50rem; /* Allow content to grow and shrink */
+    flex: 1 1 50rem;
     text-align: left;
 }
 
 .about-me-heading {
     font-family: Circular Std, Arial, Helvetica, sans-serif;
     font-weight: 900;
-    /* font-size: 1rem; - Removed this duplicate line */
     font-size: clamp(2.5rem, 6vw, 6rem);
     line-height: 85%;
     margin-bottom: clamp(2rem, 4vw, 4.75rem);
@@ -40,26 +35,26 @@ body {
 }
 
 .about-me-content p {
-    font-size: 2.2rem; /* Larger paragraph text */
+    font-size: 2.2rem;
     margin-bottom: 1rem;
     line-height: 1.5;
-    color: #ccc; /* Slightly lighter text for paragraphs */
-    font-weight: 300; /* Lighter font weight */
+    color: #ccc;
+    font-weight: 300;
 }
 
 .about-me-content p strong {
-    color: #fff; /* Make names/keywords stand out */
+    color: #fff;
 }
 
 .about-me-graphic {
-    flex: 1 1 35rem; /* Graphic size */
+    flex: 1 1 35rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .about-me-graphic img {
-    height: 35rem;
+    height: 40rem;
     animation: float 4s linear infinite;
     margin-left: auto;
 }
@@ -93,25 +88,21 @@ span {
     background-clip: text;
     text-fill-color: transparent;
 }
-/* Media queries for responsiveness */
+
 @media (max-width: 991px) {
     .about-me-hero {
-        /* Adjusted padding for smaller screens */
         padding: 10rem 4% 2rem 4%; 
     }
     .about-me-heading {
-        /* ... existing styles ... */
     }
-    /* ... rest of the code ... */
 }
 
 @media (max-width: 768px) {
     .about-me-hero {
         flex-direction: column; 
         text-align: center;
-        /* Adjusted padding for vertical stacking */
+
         padding: 10rem 4% 2rem 4%; 
     }
-    /* ... rest of the code ... */
+
 }
-/* ... rest of the media queries ... */
