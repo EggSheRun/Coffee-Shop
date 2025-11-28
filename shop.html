@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/project/css/style.css">
+    <title>Shop</title>
+</head>
+<body>
+       <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a href="#" class="logo">☕ coffee</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#review">review</a>
+            <a href="#book">book</a>
+            <a href="me.html">me</a>
+        </nav>
+        <div class="header-actions" style="display: flex; align-items: center; gap: 20px;">
+            
+            <div id="cart-wrapper" class="cart-wrapper" style="position: relative; cursor: pointer; color: var(--main-color); font-size: 2.2rem;">
+                
+                <i class="fas fa-shopping-cart"></i> 
+                
+                <span class="cart-icon-counter" style="
+                    /* Inline styles for quick visual placement */
+                    background: red; 
+                    color: white; 
+                    border-radius: 50%; 
+                    padding: 2px 7px; 
+                    font-size: 0.8rem;
+                    position: absolute;
+                    top: -10px;
+                    right: -10px;
+                    display: inline-block;
+                    line-height: 1;
+                ">0</span>
+                
+                <div id="cart-dropdown" class="cart-dropdown-menu" style="display: none;">
+                    <h3>Your Cart</h3>
+                    <div id="cart-items-list">
+                        <p>Your cart is empty.</p>
+                    </div>
+                    <p class="cart-total-line">Total: $<span id="cart-total-amount">0.00</span></p>
+                    <a href="#" class="btn" style="width: 100%; text-align: center;">Checkout</a>
+                </div>
+                
+            </div>
+            
+            <a href="#" class="btn">Book a Table</a>
+        </div>
+    </header>
+<section class="shop-page-container">
+    
+    <div class="sidebar">
+        <h3>Coffee Categories</h3>
+        <ul>
+            <li class="active"><a href="#category-1">Espresso Blends</a></li>
+            <li><a href="#category-2">Single Origin Roasts</a></li>
+            <li><a href="#category-3">Decaf Options</a></li>
+            <li><a href="#category-4">Flavored Coffees</a></li>
+            <li><a href="#category-5">Cold Brew Concentrates</a></li>
+        </ul>
+        
+        <h3 style="margin-top: 30px;">Filter by Brand</h3>
+        <ul>
+            <li><a href="#">Brand Alpha Roasters</a></li>
+            <li><a href="#">Brand Beta Blends</a></li>
+            <li><a href="#">Brand Gamma Grounds</a></li>
+            <li><a href="#">Brand Delta Beans</a></li>
+            <li><a href="#">Brand Epsilon Estates</a></li>
+        </ul>
+    </div>
+    
+    <div class="main-products">
+        <h1 class="heading" style="text-align: left; margin-bottom: 40px;">
+            Shop Our <span>Premium Coffee Collection</span>
+        </h1>
+
+        <div class="shop-search-box">
+            <input type="text" id="product-search-input" placeholder="Search for a coffee name or brand...">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <!-- ===================== CATEGORY 1 ===================== -->
+        <br>
+        <h2 id="category-1" style="font-size: 2rem; border-left: 5px solid #E67E22; padding-left: 15px; margin-bottom: 20px;">Espresso Blends</h2>
+        <div class="product-grid">
+
+            <!-- 1 to 10 -->
+            <div class="product-item">
+                <img src="/project/image/menu-2.png" alt="Product 1">
+                <h4>Dark Knight Blend</h4>
+                <span class="brand">Brand Alpha Roasters</span>
+                <span class="price">$19.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-3.png" alt="Product 2">
+                <h4>Morning Rush Espresso</h4>
+                <span class="brand">Brand Alpha Roasters</span>
+                <span class="price">$19.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-4.png" alt="Product 3">
+                <h4>Velvet Steam Blend</h4>
+                <span class="brand">Brand Alpha Roasters</span>
+                <span class="price">$19.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-5.png" alt="Product 4">
+                <h4>Golden Hour Roast</h4>
+                <span class="brand">Brand Alpha Roasters</span>
+                <span class="price">$19.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-6.png" alt="Product 5">
+                <h4>The Maverick Shot</h4>
+                <span class="brand">Brand Alpha Roasters</span>
+                <span class="price">$19.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-1.png" alt="Product 6">
+                <h4>City Roaster Mix</h4>
+                <span class="brand">Brand Alpha Roasters</span>
+                <span class="price">$19.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-2.png" alt="Product 7">
+                <h4>Midnight Oil Blend</h4>
+                <span class="brand">Brand Alpha Roasters</span>
+                <span class="price">$19.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-3.png" alt="Product 8">
+                <h4>Primo Italian Roast</h4>
+                <span class="brand">Brand Alpha Roasters</span>
+                <span class="price">$19.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-4.png" alt="Product 9">
+                <h4>Apex Espresso</h4>
+                <span class="brand">Brand Alpha Roasters</span>
+                <span class="price">$19.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-5.png" alt="Product 10">
+                <h4>Sunrise Decadence</h4>
+                <span class="brand">Brand Alpha Roasters</span>
+                <span class="price">$19.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <!-- ===================== CATEGORY 2 ===================== -->
+        <br><br>
+        <h2 id="category-2" style="font-size: 2rem; border-left: 5px solid #E67E22; padding-left: 15px; margin-bottom: 20px;">Single Origin Roasts</h2>
+        <div class="product-grid">
+
+            <!-- 11 to 20 -->
+            <div class="product-item">
+                <img src="/project//image/menu-2.png" alt="Product 11">
+                <h4>Ethiopian Yirgacheffe</h4>
+                <span class="brand">Brand Beta Blends</span>
+                <span class="price">$24.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-3.png" alt="Product 12">
+                <h4>Colombian Supremo Reserve</h4>
+                <span class="brand">Brand Beta Blends</span>
+                <span class="price">$24.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-4.png" alt="Product 13">
+                <h4>Guatemalan Antigua Estate</h4>
+                <span class="brand">Brand Beta Blends</span>
+                <span class="price">$24.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-5.png" alt="Product 14">
+                <h4>Sumatra Mandheling Bold</h4>
+                <span class="brand">Brand Beta Blends</span>
+                <span class="price">$24.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-6.png" alt="Product 15">
+                <h4>Peruvian Andes Gold</h4>
+                <span class="brand">Brand Beta Blends</span>
+                <span class="price">$24.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-1.png" alt="Product 16">
+                <h4>Kenyan AA Select</h4>
+                <span class="brand">Brand Beta Blends</span>
+                <span class="price">$24.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-2.png" alt="Product 17">
+                <h4>Nicaraguan Finca Mix</h4>
+                <span class="brand">Brand Beta Blends</span>
+                <span class="price">$24.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-3.png" alt="Product 18">
+                <h4>Brazil Cerrado Sweet</h4>
+                <span class="brand">Brand Beta Blends</span>
+                <span class="price">$24.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-4.png" alt="Product 19">
+                <h4>Honduras Marcala</h4>
+                <span class="brand">Brand Beta Blends</span>
+                <span class="price">$24.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-5.png" alt="Product 20">
+                <h4>Costa Rican Tarrazu</h4>
+                <span class="brand">Brand Beta Blends</span>
+                <span class="price">$24.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <!-- ===================== CATEGORY 3 ===================== -->
+        <br><br>
+        <h2 id="category-3" style="font-size: 2rem; border-left: 5px solid #E67E22; padding-left: 15px; margin-bottom: 20px;">Decaf Options</h2>
+        <div class="product-grid">
+
+            <!-- 21 to 30 -->
+            <div class="product-item">
+                <img src="/project//image/menu-2.png" alt="Product 21">
+                <h4>Moonlight Decaf</h4>
+                <span class="brand">Brand Gamma Grounds</span>
+                <span class="price">$18.50</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-3.png" alt="Product 22">
+                <h4>Swiss Water Process</h4>
+                <span class="brand">Brand Gamma Grounds</span>
+                <span class="price">$18.50</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-4.png" alt="Product 23">
+                <h4>Late Night Brew</h4>
+                <span class="brand">Brand Gamma Grounds</span>
+                <span class="price">$18.50</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-5.png" alt="Product 24">
+                <h4>Decaf Mountain</h4>
+                <span class="brand">Brand Gamma Grounds</span>
+                <span class="price">$18.50</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-6.png" alt="Product 25">
+                <h4>Pillow Talk Roast</h4>
+                <span class="brand">Brand Gamma Grounds</span>
+                <span class="price">$18.50</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-1.png" alt="Product 26">
+                <h4>No Jitters Blend</h4>
+                <span class="brand">Brand Gamma Grounds</span>
+                <span class="price">$18.50</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-2.png" alt="Product 27">
+                <h4>Pure Calm Decaf</h4>
+                <span class="brand">Brand Gamma Grounds</span>
+                <span class="price">$18.50</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-3.png" alt="Product 28">
+                <h4>Mellow Dusk Blend</h4>
+                <span class="brand">Brand Gamma Grounds</span>
+                <span class="price">$18.50</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-4.png" alt="Product 29">
+                <h4>Subtle Snooze</h4>
+                <span class="brand">Brand Gamma Grounds</span>
+                <span class="price">$18.50</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-5.png" alt="Product 30">
+                <h4>Decaf Explorer</h4>
+                <span class="brand">Brand Gamma Grounds</span>
+                <span class="price">$18.50</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <!-- ===================== CATEGORY 4 ===================== -->
+        <br><br>
+        <h2 id="category-4" style="font-size: 2rem; border-left: 5px solid #E67E22; padding-left: 15px; margin-bottom: 20px;">Flavored Coffees</h2>
+        <div class="product-grid">
+
+            <!-- 31 to 40 -->
+            <div class="product-item">
+                <img src="/project//image/menu-2.png" alt="Product 31">
+                <h4>Caramel Kiss</h4>
+                <span class="brand">Brand Delta Beans</span>
+                <span class="price">$21.00</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-3.png" alt="Product 32">
+                <h4>Hazelnut Dream</h4>
+                <span class="brand">Brand Delta Beans</span>
+                <span class="price">$21.00</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-4.png" alt="Product 33">
+                <h4>Vanilla Bean Cream</h4>
+                <span class="brand">Brand Delta Beans</span>
+                <span class="price">$21.00</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-5.png" alt="Product 34">
+                <h4>Cinnamon Spice Swirl</h4>
+                <span class="brand">Brand Delta Beans</span>
+                <span class="price">$21.00</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-6.png" alt="Product 35">
+                <h4>Chocolate Cherry</h4>
+                <span class="brand">Brand Delta Beans</span>
+                <span class="price">$21.00</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-1.png" alt="Product 36">
+                <h4>Pumpkin Patch Latte</h4>
+                <span class="brand">Brand Delta Beans</span>
+                <span class="price">$21.00</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-2.png" alt="Product 37">
+                <h4>Irish Cream Liqueur</h4>
+                <span class="brand">Brand Delta Beans</span>
+                <span class="price">$21.00</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-3.png" alt="Product 38">
+                <h4>Maple Pecan Twist</h4>
+                <span class="brand">Brand Delta Beans</span>
+                <span class="price">$21.00</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-4.png" alt="Product 39">
+                <h4>Coconut Delight</h4>
+                <span class="brand">Brand Delta Beans</span>
+                <span class="price">$21.00</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-5.png" alt="Product 40">
+                <h4>Almond Biscotti</h4>
+                <span class="brand">Brand Delta Beans</span>
+                <span class="price">$21.00</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <!-- ===================== CATEGORY 5 ===================== -->
+        <br><br>
+        <h2 id="category-5" style="font-size: 2rem; border-left: 5px solid #E67E22; padding-left: 15px; margin-bottom: 20px;">Cold Brew Concentrates</h2>
+        <div class="product-grid">
+
+            <!-- 41 to 50 -->
+            <div class="product-item">
+                <img src="/project//image/menu-2.png" alt="Product 41">
+                <h4>The Classic Concentrate</h4>
+                <span class="brand">Brand Epsilon Estates</span>
+                <span class="price">$28.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-3.png" alt="Product 42">
+                <h4>Dark Roast Cold Press</h4>
+                <span class="brand">Brand Epsilon Estates</span>
+                <span class="price">$28.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-4.png" alt="Product 43">
+                <h4>Smooth Vanilla CB</h4>
+                <span class="brand">Brand Epsilon Estates</span>
+                <span class="price">$28.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-5.png" alt="Product 44">
+                <h4>Spiced Winter Brew</h4>
+                <span class="brand">Brand Epsilon Estates</span>
+                <span class="price">$28.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-6.png" alt="Product 45">
+                <h4>Summer Citrus CB</h4>
+                <span class="brand">Brand Epsilon Estates</span>
+                <span class="price">$28.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-1.png" alt="Product 46">
+                <h4>Extra Bold Concentrate</h4>
+                <span class="brand">Brand Epsilon Estates</span>
+                <span class="price">$28.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-2.png" alt="Product 47">
+                <h4>Midnight Steeper</h4>
+                <span class="brand">Brand Epsilon Estates</span>
+                <span class="price">$28.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-3.png" alt="Product 48">
+                <h4>Velvet Ready-to-Pour</h4>
+                <span class="brand">Brand Epsilon Estates</span>
+                <span class="price">$28.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project//image/menu-4.png" alt="Product 49">
+                <h4>Iced Coffee Base</h4>
+                <span class="brand">Brand Epsilon Estates</span>
+                <span class="price">$28.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="/project/image/menu-5.png" alt="Product 50">
+                <h4>The Traveler's Cold Brew</h4>
+                <span class="brand">Brand Epsilon Estates</span>
+                <span class="price">$28.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> india</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> USA</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> france</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> africa</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> japan</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"><i class="fas fa-arrow-right"></i> home</a>
+                <a href="#about"><i class="fas fa-arrow-right"></i> about</a>
+                <a href="#menu"><i class="fas fa-arrow-right"></i> menu</a>
+                <a href="#review"><i class="fas fa-arrow-right"></i> review</a>
+                <a href="#book"><i class="fas fa-arrow-right"></i> book</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fas fa-phone"></i> +123-456-7890</a>
+                <a href="#"><i class="fas fa-phone"></i> +111-222-3333</a>
+                <a href="#"><i class="fas fa-envelope"></i> coffee@gmail.com</a>
+                <a href="#"><i class="fas fa-envelope"></i> Perú, Lima</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+            </div>
+        </div>
+
+        <div class="credit">created by <span>Ken Biñas</span> | all rights reserved</div>
+    </section>
+<!-- SWIPER -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS File Link  -->
+    <script src="js/script.js"></script>
+</body>
+</html>
