@@ -54,19 +54,17 @@ body {
 }
 
 .about-me-graphic img {
-    height: 40rem;
-    animation: float 4s linear infinite;
-    margin-left: autoleft;
+    width: 63rem;
+    animation: spin 9s linear infinite;
 }
 
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0rem);
-    }
-
-    50% {
-        transform: translateY(-7rem);
-    }
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 span {
