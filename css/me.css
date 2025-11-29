@@ -56,7 +56,7 @@ body {
 .about-me-graphic img {
     height: 40rem;
     animation: float 4s linear infinite;
-    margin-left: auto;
+    margin-left: autoleft;
 }
 
 @keyframes float {
